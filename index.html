@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="contanier">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+<!-- start home sec -->
+    <div class="hero" id="home">
+        <div class="contanier">
+            <div class="content">
+                <h4>Hello, I'm</h4>
+                <h1>Duke Gitanga</h1>
+                <p>A Passionate Fashion designer</p>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <div class="hero-img">
+                <img src="img/duke.jpg" alt="" height="250" width="220">
+            </div>
+        </div>
+    </div>
+
+    <!-- start about sec -->
+
+    <section id="about" class="about">
+        <div class="contanier">
+            <div class="about-img">
+                <img src="img/duke 1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>About <span>Me</span></h1>
+                <h3>Proffessional designer</h3>
+                <p>My name is Duke Gitanga Professional and imaginative Content Writer, 
+                    Copywriter, and Blog Writer 
+                    with over 10 years of experience 
+                    writing content for various industries. Proficient in engaging 
+                    readers through interesting copy, useful blog posts,
+                     and Search Engine Optimization friendly blog posts.
+                     Proven experience in meeting deadlines without compromising 
+                     on the author's voice and tone. Considering
+                     a challenging opportunity as a content writer to apply my
+                      skills at creating content for business growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Services -->
+
+    <section id="services" class="services">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>My <span>Services</span></h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <i class="fas fa-pen"></i>
+                    <h3>Excellent Writing</h3>
+                    <p>I craft engaging, well-researched, and grammatically flawless 
+                        content tailored to your target audience, ensuring clarity and effectiveness in communication.</p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO and keyword research</h3>
+                    <p>I use advanced SEO techniques to research high-ranking keywords,
+                         optimize content for search engines, and improve website visibility, driving organic traffic.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Content strategy development</h3>
+                    <p>I develop data-driven content strategies that align with your
+                         business goals, ensuring consistency, audience engagement, and long-term brand growth.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-hashtag"></i>
+                    <h3>Social media copywriting</h3>
+                    <p>I create compelling social media posts, captions, and ad 
+                        copies that capture attention, drive engagement, and increase brand awareness.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>content marketing</h3>
+                    <p>I design and implement content marketing strategies that attract, 
+                        retain, and convert audiences through blogs, emails, and multimedia content.</p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Good understanding of digital marketing trends</h3>
+                    <p>I stay updated on the latest digital marketing trends, tools,
+                         and strategies to help businesses adapt and thrive in the ever-evolving online landscape.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Proficiency in content management platforms</h3>
+                    <p>I efficiently manage websites, blogs, and e-commerce 
+                        platforms using CMS tools like WordPress, ensuring smooth content publishing and optimization.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Proficiency in content management platforms</h3>
+                    <p>I conduct thorough research and fact-checking to ensure 
+                        all content is accurate, credible, and well-supported by reliable sources.
+                    </p>
+
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-spell-check"></i>
+                    <h3>Editing, and proofreading</h3>
+                    <p>I meticulously review and correct grammar, spelling, punctuation, and formatting 
+                        errors to enhance the clarity and professionalism of written content.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Contact -->
+
+    <section id="Contact" class="contact">
+        <div class="container">
+            <div class="sec-top">
+                <h1>Contact <span>Me</span></h1>
+            </div>
+    
+            <form id="contactForm">
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="number" id="phoneNumber" placeholder="Phone Number">
+                <input type="email" id="emailAddress" placeholder="Email Address">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="button" class="btn" onclick="sendEmail()">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        function sendEmail() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var emailAddress = document.getElementById("emailAddress").value;
+            var message = document.getElementById("message").value;
+    
+            var subject = encodeURIComponent("Contact Form Message from " + firstName + " " + lastName);
+            var body = encodeURIComponent(
+                "Name: " + firstName + " " + lastName + "\n" +
+                "Phone: " + phoneNumber + "\n" +
+                "Email: " + emailAddress + "\n\n" +
+                "Message:\n" + message
+            );
+    
+            window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=i.geekytechie@gmail.com.com&su=" + subject + "&body=" + body;
+        }
+    </script>
+    
+    <script src="main.js"></script>
+</body>
+<footer class="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a> 
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+    </div>
+    <p class="copyright">&copy 2024 Duke Gitanga | All Rights Reserved</p>
+</footer>
+</html>
